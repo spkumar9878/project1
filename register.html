@@ -7,6 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="login.css">
+     <script>
+    function validateForm() {
+        if( document.myForm.fname.value == "" ) {
+            alert( "Please provide your first name!" );
+            document.myForm.fname.focus() ;
+            return false;
+         }
+        if( document.myForm.lname.value == "" ) {
+            alert( "Please provide your last name!" );
+            document.myForm.lname.focus() ;
+            return false;
+         }
+         if( document.myForm.email.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+         }
+}
+   </script>
     <style>
         .bg-image {
             background-image: url("REGI.jpg");
@@ -93,7 +112,7 @@
     </nav>
     <div class="bg-image">
         <div class="f1">
-            <form action="#">
+            <form name="myForm" action="#" onclick="validateForm()" >
                 <h1 style="text-align: center;"> Complete your Registration</h1> <br>
                 <hr>
                 <label for="fname">First Name</label><br>
