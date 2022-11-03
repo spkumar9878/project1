@@ -8,6 +8,7 @@
     <title>Blood donation Camp</title>
     <link rel="stylesheet" href="BoolDonation.css">
     <link rel="stylesheet" href="login.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -97,7 +98,14 @@
     </div>
     <footer class="copyrights">&copy; Surya Pratap</footer>
     <script>
-
+        $(document).ready(function(){
+            $(".submit").click(function(){
+                alert("Your response has submitted!")
+            });
+            $(".search").click(function(){
+                alert("Donor is found!!")
+            })
+        })
     </script>
 </body>
 
