@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        .bg-image {
+            background-image: url("REGI.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+        
+        .f1 {
+            margin-left: 25%;
+            margin-top: 1.5%;
+            box-sizing: border-box;
+            background-color: rgb(65, 59, 59);
+            background-color: rgba(180, 189, 55, 0.431);
+            width: 50%;
+            height: 50%;
+            padding-top: 8px;
+            font: normal 10px verdana;
+            text-align: left;
+            padding: 20px;
+            border: 5px #aaa;
+            border-style: outset inset inset outset;
+        }
+        
+        form label {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: large
+        }
+        
+        .f1 input[type=text],
+        .f1 input[type=date],
+        .f1 input[type=email],
+        .f1 input[type=password] {
+            width: 95%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+        
+        .regibtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        
+        .regibtn:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <H1 style=" color: rgba(0, 0, 255, 0.609);">BLOOD DONATION CAMP</H1>
+        <H2 style="color: #000;">Donate to save Lives</H2>
+    </header>
+    <nav>
+        <a href="BLOOD DONATIONCAMP.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="wtd.html">Why To donate</a>
+        <a href="wcgb.html">Who can give Blood</a>
+        <a href="REFER.html">Refer a Friend</a>
+        <!-- <a href="contactus.html">Contact Us</a> -->
+        <div class="login-container">
+            <form action="#">
+                <input type="text" placeholder="Username" name="username">
+                <input type="password" placeholder="Password" name="psw">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </nav>
+    <div class="bg-image">
+        <div class="f1">
+            <form action="#">
+                <h1 style="text-align: center;"> Complete your Registration</h1> <br>
+                <hr>
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" placeholder="First Name" required><br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" placeholder="Last Name" required><br>
+                <label for="dob">D.O.B.</label><br>
+                <input type="date" id="dob" name="dob" placeholder="D-M-Year"><br>
+                <label for="email">Enter your email:</label><br>
+                <input type="email" id="email" name="email" placeholder="xyz@email.com">
+                <label for="pwd">Set Password</label><br>
+                <input type="password" name="password" id="pwd" placeholder="set password">
+                <hr>
+                <button type="submit" class="regibtn">Register</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
