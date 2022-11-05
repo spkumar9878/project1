@@ -96,35 +96,35 @@
         </p>
         <h2 style="margin: 25px ;color: rgb(136, 127, 211);font-family: Lato;text-transform: none;">
             Send Your Friend an Invite </h2>
-        <form class="f1">
+         <form class="f1" name="myForm" onclick="validateForm()">
 
             <label for="First Name">First Name</label>
             <br>
-            <input id="referrerfirstname" type="text" name="First Name" required><br>
+           <input id="fname" type="text" name="First Name" required><br>
             <label for="Last name">Last name</label>
             <br>
-            <input type="text" name="Last name" required><br>
+            <input type="text" id="lname" required><br>
             <label for="Phone number">Phone number</label><br>
             <input type="text" name="Phone number" placeholder="12345-67890" required><br>
             <label for="Email">Email</label>
             <br>
-            <input type="email" name="Email" required><br>
+            <input type="email" id="Email" required><br>
 
 
             <label class="control-label" for="Invite's first name">Invite's first   name</label>
             <br>
-            <input type="text" name="Invite's first name" required=""><br>
+            <input type="text" name="Invite's first name" id="ifname" required=""><br>
 
             <label for="Invite's last name">Invite's last
                  name</label>
             <br>
-            <input id="referrerlastname" type="text" name="Invite's last name"><br> <label class="control-label" for="Invite's Phone number">Invite's Phone number
+            <input id="ilname" type="text" name="Invite's last name"><br> <label class="control-label" for="Invite's Phone number">Invite's Phone number
                 </label>
             <br>
             <input type="text" name="Invite's Phone number" placeholder="12345-67890" required><br>
             <label for="Invite's Email">Invite's Email</label>
             <br>
-            <input type="email" name="Invite's Email" required=""><br><br>
+            <input type="email" name="Invite's Email" id="IEmail" required=""><br><br>
 
             <button style="background-color: #4CAF50;color: white; padding: 16px 20px; margin: 8px 0; border: none; cursor: pointer; width: 20%; opacity: 0.9;">Send</button>
             <br>
@@ -158,5 +158,39 @@
     </div>
 
 </body>
-
+<script>
+    //form validation
+function validateForm() {
+    if( document.myForm.fname.value == "" ) {
+        alert( "Please provide your first name!" );
+        document.myForm.fname.focus() ;
+        return false;
+     }
+    if( document.myForm.lname.value == "" ) {
+        alert( "Please provide your last name!" );
+        document.myForm.lname.focus() ;
+        return false;
+     }
+     if( document.myForm.email.value == "" ) {
+        alert( "Please provide your Email!" );
+        document.myForm.Email.focus() ;
+        return false;
+     }
+    if( document.myForm.fname.value == "" ) {
+        alert( "Please provide invite's first name!" );
+        document.myForm.ifname.focus() ;
+        return false;
+     }
+    if( document.myForm.lname.value == "" ) {
+        alert( "Please provide invite's last name!" );
+        document.myForm.ilname.focus() ;
+        return false;
+     }
+     if( document.myForm.email.value == "" ) {
+        alert( "Please provide invite's Email!" );
+        document.myForm.IEmail.focus() ;
+        return false;
+     }
+}
+</script>
 </html>
