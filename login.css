@@ -1,6 +1,7 @@
 .header {
     background-image: url("blood.jpg");
     margin-top: 0%;
+    text-align: right;
 }
 
 .login {
